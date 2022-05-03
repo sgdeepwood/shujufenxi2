@@ -5,7 +5,6 @@ train = pd.read_csv("./train.csv")
 test  = pd.read_csv("./test.csv")
 print ('训练数据train:',train.shape,'测试数据test:',test.shape)#查看两个数据集的形状
 
-#这里删除了四行
 full = train.append( test , ignore_index = True )#合并数据集
 print ('合并后的数据集:',full.shape)
 
